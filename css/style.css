@@ -1,0 +1,96 @@
+* {
+  margin: 0 0;
+}
+
+html {
+  font-size: 17px;
+  color: white;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif; 
+  background: url("../img/01.jpg") no-repeat top center/cover;/* Image does not repeat */
+  color: #fff;
+  line-height: 1.6;
+  height: 100vh; /* Could be changed back to 100vh*/
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+  #race_card {
+    width: 50vh;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+    #race_card > section {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0.1rem 0.5rem 0.5rem black;
+    }
+
+    #race_name {
+      height: 35%;
+      border-radius: 2rem 2rem 0rem 0rem;
+      background-color: red;
+    }
+      #race_name > h3 {
+        font-size: 4rem;
+        width: 95%;
+        text-align: center;
+        line-height: 4rem;
+        margin: 0 0 ;
+      }
+
+    #race_number {
+      height: 30%;
+      background-color: white;
+    }
+      #race_number > h1 {
+        color: turquoise;
+        font-size: 12rem;
+        width: 95%;
+        margin: 0 0;
+        text-align: center;
+      }
+
+    #race_info {
+      height: 35%;
+      border-radius: 0rem 0rem 2rem 2rem;
+      background-color: turquoise;
+      display: flex;
+      flex-direction: column;
+    }
+      #race_info > h1 {
+        font-size: 4.3rem;
+        width: 90%;
+        margin: 0 0;
+        font-family: "arial black";
+        text-align: center;
+        font-style: italic;
+      }
+      #race_info > #race_group {
+          align-self: flex-start; /* Moves the race group individually */
+          margin-left: 2rem;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 80%;
+          border-radius: 2rem;
+          background-color: pink;
+          box-shadow: 0.1rem 0.1rem 0.1rem black;
+      }
+        #race_group > span:first-child { /* Targets first span only */
+          background-color: red;
+          width: 15%;
+          text-align: center;
+          border-radius: 2rem;
+        }
+        #race_group > span + span { /* Targets second span only*/
+          color: black;
+        }
