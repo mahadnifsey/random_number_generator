@@ -9,7 +9,7 @@ html {
 
 body {
   font-family: Arial, Helvetica, sans-serif; 
-  background: url("../img/01.jpg") no-repeat top center/cover;/* Image does not repeat */
+  background: url("../img/01.jpg") no-repeat top center/cover ;/* Image does not repeat */
   color: #fff;
   line-height: 1.6;
   height: 100vh; /* Could be changed back to 100vh*/
@@ -51,7 +51,7 @@ body {
       height: 30%;
       background-color: white;
     }
-      #race_number > h1 {
+      #race_number > h3 {
         color: turquoise;
         font-size: 12rem;
         width: 95%;
@@ -66,31 +66,34 @@ body {
       display: flex;
       flex-direction: column;
     }
-      #race_info > h1 {
-        font-size: 4.3rem;
-        width: 90%;
-        margin: 0 0;
-        font-family: "arial black";
-        text-align: center;
-        font-style: italic;
-      }
-      #race_info > #race_group {
-          align-self: flex-start; /* Moves the race group individually */
-          margin-left: 2rem;
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          width: 80%;
-          border-radius: 2rem;
-          background-color: pink;
-          box-shadow: 0.1rem 0.1rem 0.1rem black;
-      }
-        #race_group > span:first-child { /* Targets first span only */
-          background-color: red;
-          width: 15%;
-          text-align: center;
-          border-radius: 2rem;
-        }
-        #race_group > span + span { /* Targets second span only*/
-          color: black;
-        }
+
+    button {
+      background: none;
+      border: 2px solid;
+      font: inherit;
+      line-height: 1;
+      padding: 1em 2em;
+      border-radius: 5%;
+    }
+    .pulse:hover, 
+    .pulse:focus {
+      animation: pulse 1s;
+      box-shadow: 0 0 0 2em transparent;
+    }
+    
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 #072DDB; }
+    }
+    
+    button {  
+      color: #000C7A;
+      transition: 0.25s;
+    }
+    
+    button:active {
+      color: white;
+      background: #000C7A;
+      border: 3px solid purple;
+      animation: pulse 1s;
+      box-shadow: 0 0 0 2em transparent;
+    }
