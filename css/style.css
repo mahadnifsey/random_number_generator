@@ -37,7 +37,9 @@ body {
     #race_name {
       height: 35%;
       border-radius: 2rem 2rem 0rem 0rem;
-      background-color: red;
+      background-color: #0096C4;
+      display: flex;
+      flex-direction: column;
     }
       #race_name > h3 {
         font-size: 4rem;
@@ -45,55 +47,46 @@ body {
         text-align: center;
         line-height: 4rem;
         margin: 0 0 ;
+        padding-bottom: 1rem;
       }
 
     #race_number {
       height: 30%;
       background-color: white;
+      display: flex;
     }
       #race_number > h3 {
-        color: turquoise;
-        font-size: 12rem;
-        width: 95%;
-        margin: 0 0;
+        color: #0096C4;
+        font-size: 8rem;
+        width: 50%;
+        height: 80%;
+        padding-bottom: 2rem;
+        margin: 1rem 0rem;
         text-align: center;
+        border-radius: 1rem;
       }
 
     #race_info {
       height: 35%;
       border-radius: 0rem 0rem 2rem 2rem;
-      background-color: turquoise;
+      background-color: white;
       display: flex;
       flex-direction: column;
     }
 
     button {
-      background: none;
-      border: 2px solid;
+      background: #0096C4;
+      color: white;
       font: inherit;
-      line-height: 1;
       padding: 1em 2em;
       border-radius: 5%;
-    }
-    .pulse:hover, 
-    .pulse:focus {
-      animation: pulse 1s;
-      box-shadow: 0 0 0 2em transparent;
-    }
-    
-    @keyframes pulse {
-      0% { box-shadow: 0 0 0 0 #072DDB; }
-    }
-    
-    button {  
-      color: #000C7A;
       transition: 0.25s;
+      border: none;
+      box-shadow: 0.2rem 0.2rem 0.5rem black;
     }
+    
     
     button:active {
       color: white;
-      background: #000C7A;
-      border: 3px solid purple;
-      animation: pulse 1s;
-      box-shadow: 0 0 0 2em transparent;
+      box-shadow: none;
     }
